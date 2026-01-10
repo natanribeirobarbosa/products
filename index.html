@@ -3,51 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Links com Desconto</title>
+  <title>DARKEST</title>
   <style>
+
+       /* ===== RESET ÚTIL ===== */
+* {
+  box-sizing: border-box;
+}
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      background: #000000;
       color: #fff;
       text-align: center;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    img {
-      width: 100px;
-      border-radius: 50%;
-      margin-top: 20px;
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    a {
-      display: block;
-      background: #25D366;
-      color: #000;
-      text-decoration: none;
-      padding: 16px;
-      margin: 12px auto;
-      border-radius: 10px;
-      font-weight: bold;
-      max-width: 400px;
-    }
-    small {
-      opacity: 0.7;
-    }
+
+
+
+/* ===== PRODUTOS ===== */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+}
+
+.product {
+  background: #2f2f2f;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.price{
+    font-size: 20px;
+}
+.buy{
+    padding: 2px;
+    font-size: 17px;
+}
+.product img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.product button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===== HOVER ===== */
+.product:hover {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+  #logo {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+}
+
+   
   </style>
 </head>
 <body>
 
-<img src="SUA_FOTO.jpg" alt="Perfil">
+    <div id="logo">
+<img src="logo2.jpeg" height="100px" alt="Perfil">
+<span>DARKEST</span>
+</div>
 
-<h2>Links com Desconto 🔥</h2>
-<p>Produtos que eu recomendo</p>
 
-<a href="SEU_LINK_AFILIADO">🔥 Oferta principal</a>
-<a href="SEU_LINK_AFILIADO">🛒 Produto recomendado</a>
-<a href="SEU_LINK_AFILIADO">🎓 Curso indicado</a>
+<h2>Links com Desconto🔥:</h2>
+<p>Recomendações especializadas:</p>
+<div id="products">
+<div class="product">
+    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S96b9ff82071c47868265c0ddba7f5b6cB.jpg_220x220q75.jpg_.avif" height="160px" alt="">
 
-<small>
-  Alguns links podem gerar comissão sem custo extra.
-</small>
+    <div>
+    <span class="price">R$20,00</span>
+    <button class="buy">Acessar página</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S96b9ff82071c47868265c0ddba7f5b6cB.jpg_220x220q75.jpg_.avif" height="160px" alt="">
+
+    <div>
+    <span class="price">R$20,00</span>
+    <button>Acessar página</button>
+    </div>
+</div>
+
+
+<div class="product">
+    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S96b9ff82071c47868265c0ddba7f5b6cB.jpg_220x220q75.jpg_.avif" height="160px" alt="">
+
+    <div>
+    <span class="price">R$20,00</span>
+    <button>Acessar página</button>
+    </div>
+</div>
+<div class="product">
+    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S96b9ff82071c47868265c0ddba7f5b6cB.jpg_220x220q75.jpg_.avif" height="160px" alt="">
+
+    <div>
+    <span class="price">R$20,00</span>
+    <button>Acessar página</button>
+    </div>
+</div>
+
+</div>
+
+
+
+<footer>
+    <small>Alguns links nos geram comissão sem nenhum custo extra ao comprador.</small>
+</footer>
 
 </body>
 </html>
