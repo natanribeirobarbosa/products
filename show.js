@@ -32,10 +32,12 @@ function carregarUsuarios() {
         html += `
           <div class="product">
             <img src="${p.linkF}" height="160">
+            <div>
             <span>${p.nome}</span>
             <button onclick="window.location.href='${p.link}'">
               Acessar link
             </button>
+            </div>
           </div>
         `
       }
