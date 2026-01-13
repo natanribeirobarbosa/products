@@ -22,7 +22,11 @@ function carregarUsuarios() {
     </div>
 </div>
 >`;
+
+
     })
+
+    lista.innerHTML = content
   })
 }
 
