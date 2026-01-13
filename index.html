@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DARKEST</title>
+ 
   <style>
 
        /* ===== RESET ÚTIL ===== */
@@ -44,7 +45,7 @@
   display: flex;
   padding: 10px;
   gap: 10px;
-  width: 100%;
+
   max-width: 480px;
   border-radius: 8px;
   transition: box-shadow 0.2s;
@@ -82,6 +83,10 @@
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4);
 }
 
+footer{
+  margin-top: 100px;
+}
+
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
 
@@ -113,9 +118,11 @@
 <body>
 
     <div id="logo">
-<img src="logo2.jpeg" height="100px" alt="Perfil">
+<img src="logo21.jpeg" height="100px" alt="Perfil">
 <span>DARKEST</span>
 </div>
+  <button onclick="salvarUsuario()">Salvar</button>
+
 
 
 <h2>Links com Desconto🔥:</h2>
@@ -166,4 +173,5 @@
 </footer>
 
 </body>
+<script type="module" src="save.js"></script>
 </html>
