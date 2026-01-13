@@ -18,7 +18,7 @@ function carregarUsuarios() {
     <div>
     <span class="price"></span>
     <span class="">${doc.data().nome}</span>
-    <button class="buy" onclick="window.location.href='${doc.data().linkF}'"></button>
+    <button class="buy" onclick="window.location.href='${doc.data().linkF}'">Acessar link</button>
     </div>
 </div>`;
 
