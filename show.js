@@ -1,39 +1,47 @@
-import { db } from "./firebase.js"
 import {
-  collection,
   doc,
-  onSnapshot
+  onSnapshot,
+  getDoc
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
+
+import { db } from "./firebase.js"
 
 
 function carregarUsuarios() {
   const lista = document.getElementById("products")
 
-  const roupaRef = doc(db, "roupas", "vitrine")
+  const roupaRef = doc(db, "roupas", "lBi3lHOQHCQJvbtytYzx")
 
-  onSnapshot(roupaRef, (docSnap) => {
+  onSnapshot(roupaRef, async (docSnap) => {
     if (!docSnap.exists()) return
 
     const dados = docSnap.data()
-    const itens = dados.nomes // 👈 campo array do Firestore
+    const refs = dados.nomes // 👈 array de DocumentReference
 
-    let content = ""
+    if (!Array.isArray(refs)) return
 
-    itens.forEach(item => {
-      content += `
-        <div class="product">
-          <img src="${item.linkF}" height="160px" alt="">
-          <div>
-            <span class="">${item.nome}</span>
-            <button class="buy" onclick="window.location.href='${item.link}'">
+    let html = ""
+
+    // 🔥 BUSCA CADA DOCUMENTO REFERENCIADO
+    for (const ref of refs) {
+      const produtoSnap = await getDoc(ref)
+
+      if (produtoSnap.exists()) {
+        const p = produtoSnap.data()
+
+        html += `
+          <div class="product">
+            <img src="${p.linkF}" height="160">
+            <span>${p.nome}</span>
+            <button onclick="window.location.href='${p.link}'">
               Acessar link
             </button>
           </div>
-        </div>
-      `
-    })
+        `
+      }
+    }
 
-    lista.innerHTML = content
+    lista.innerHTML = html
   })
 }
 
