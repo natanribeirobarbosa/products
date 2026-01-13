@@ -14,11 +14,11 @@ function carregarUsuarios() {
 
     snapshot.forEach(doc => {
      content +=`<div class="product">
-    <img src="`+doc.data().linkF+`" height="160px" alt="">
+    <img src="${doc.data().linkF}" height="160px" alt="">
     <div>
     <span class="price"></span>
-    <span class="">`+doc.data().nome+`</span>
-    <button class="buy"><a href="`+doc.data().linkF+`"></a>">Acessar página</button>
+    <span class="">${doc.data().nome}</span>
+    <button class="buy" onclick="window.location.href='${doc.data().linkF}'"></button>
     </div>
 </div>`;
 
