@@ -18,7 +18,7 @@ function carregarUsuarios() {
     <div>
     <span class="price"></span>
     <span class="">`+doc.data().nome+`</span>
-    <button class="buy"><a href=""`+doc.data().linkF+`</a>">Acessar página</button>
+    <button class="buy"><a href="`+doc.data().linkF+`"></a>">Acessar página</button>
     </div>
 </div>`;
 

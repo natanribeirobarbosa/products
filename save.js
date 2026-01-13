@@ -12,4 +12,4 @@ async function salvarProduto(nome, link, linkF) {
   alert("Salvo com sucesso!")
 }
 
-window.salvarProduto = salvarUsuario
+window.salvarProduto = salvarProduto
