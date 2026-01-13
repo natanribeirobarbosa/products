@@ -7,7 +7,7 @@ import {
 import { db } from "./firebase.js"
 
 
-function carregarUsuarios() {
+function carregarProdutos() {
   const lista = document.getElementById("products")
 
   const roupaRef = doc(db, "config", "vitrine")
@@ -47,7 +47,39 @@ function carregarUsuarios() {
   })
 }
 
+function carregarTodosProdutos() {
+  const lista = document.getElementById("products")
 
-carregarUsuarios()
+  const roupaRef = doc(db, "roupas", "lBi3lHOQHCQJvbtytYzx")
+
+  onSnapshot(roupaRef, (docSnap) => {
+    if (!docSnap.exists()) return
+
+    const dados = docSnap.data()
+    const itens = dados.itens // 👈 campo array do Firestore
+
+    let content = ""
+
+    itens.forEach(item => {
+      content += `
+        <div class="product">
+          <img src="${item.linkF}" height="160px" alt="">
+          <div>
+            <span class="">${item.nome}</span>
+            <button class="buy" onclick="window.location.href='${item.link}'">
+              Acessar link
+            </button>
+          </div>
+        </div>
+      `
+    })
+
+    lista.innerHTML = content
+  })
+}
+carregarProdutos()
+
+
+
 
 
