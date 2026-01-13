@@ -9,7 +9,7 @@ import {
 function carregarUsuarios() {
   const lista = document.getElementById("products")
 
-  const roupaRef = doc(db, "roupas", "lBi3lHOQHCQJvbtytYzx")
+  const roupaRef = doc(db, "roupas", "vitrine")
 
   onSnapshot(roupaRef, (docSnap) => {
     if (!docSnap.exists()) return
