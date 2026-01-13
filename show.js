@@ -1,15 +1,22 @@
 import { db } from "./firebase.js"
 import {
   collection,
-  getDocs
+  onSnapshot
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
 
-async function carregarDados() {
-  const snapshot = await getDocs(collection(db, "roupas"))
 
-  snapshot.forEach(doc => {
-    console.log(doc.id, doc.data())
+function carregarUsuarios() {
+  const lista = document.getElementById("products")
+
+  onSnapshot(collection(db, "users"), snapshot => {
+    lista.innerHTML = ""
+
+    snapshot.forEach(doc => {
+      const li = document.createElement("p")
+      li.textContent = doc.data().nome
+      lista.appendChild(li)
+    })
   })
 }
 
-carregarDados()
+carregarUsuarios()
