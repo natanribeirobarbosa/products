@@ -9,12 +9,19 @@ function carregarUsuarios() {
   const lista = document.getElementById("products")
 
   onSnapshot(collection(db, "roupas"), snapshot => {
-    lista.innerHTML = ""
+    var content = ``
+
 
     snapshot.forEach(doc => {
-      const li = document.createElement("p")
-      li.textContent = doc.data().nome
-      lista.appendChild(li)
+     content +=`<<div class="product">
+    <img src="" height="160px" alt="">
+    <div>
+    <span class="price"></span>
+    <span class="">`+doc.data().nome+`</span>
+    <button class="buy">Acessar página</button>
+    </div>
+</div>
+>`;
     })
   })
 }
