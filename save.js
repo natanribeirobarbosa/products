@@ -1,7 +1,7 @@
 import { db } from "./firebase.js"
 import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
 
-async function salvarUsuario(nome, link, linkF) {
+async function salvarProduto(nome, link, linkF) {
   await addDoc(collection(db, "roupas"), {
     nome: nome,
     link: link,
@@ -12,4 +12,4 @@ async function salvarUsuario(nome, link, linkF) {
   alert("Salvo com sucesso!")
 }
 
-window.salvarUsuario = salvarUsuario
+window.salvarProduto = salvarUsuario
