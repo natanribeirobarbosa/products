@@ -15,9 +15,11 @@
             margin: 10px;
             
         }
+
     </style>
 </head>
 <script src="save.js" type="module"></script>
+<script src="show.js" type="module"></script>
 
 <body>
     <form action="" method="get">
@@ -28,6 +30,12 @@
         <label for="linkF">link da foto</label>
          <input type="text" name="linkF" id="linkF">
     </form>
+
+    <div id="lista"></div>
         <button onclick='salvarProduto(document.getElementById("nome").value, document.getElementById("link").value, document.getElementById("linkF").value)'>Adicionar produto</button>
 </body>
+
+<script>
+    carregarTodosProdutos();
+</script>
 </html>

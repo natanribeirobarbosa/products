@@ -50,17 +50,25 @@ function carregarProdutos() {
 function carregarTodosProdutos() {
     const lista = document.getElementById("lista")
 
-  onSnapshot(collection(db, "users"), snapshot => {
+  onSnapshot(collection(db, "roupas"), snapshot => {
     lista.innerHTML = ""
+    let html = '';
 
     snapshot.forEach(doc => {
-      const li = document.createElement("li")
-      li.textContent = doc.data().nome
-      lista.appendChild(li)
+        html += `
+          <div class="product">
+            <img src="${doc.data().linkF}" height="160">
+     
+            <span>${p.nome}</span>
+          
+          </div>
+        `
+     
     })
   })
 }
 carregarProdutos()
+window.carregarTodosProdutos = carregarTodosProdutos
 
 
 
