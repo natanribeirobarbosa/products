@@ -10,7 +10,7 @@ import { db } from "./firebase.js"
 function carregarUsuarios() {
   const lista = document.getElementById("products")
 
-  const roupaRef = doc(db, "roupas", "lBi3lHOQHCQJvbtytYzx")
+  const roupaRef = doc(db, "roupas", "vitrine")
 
   onSnapshot(roupaRef, async (docSnap) => {
     if (!docSnap.exists()) return
@@ -22,7 +22,7 @@ function carregarUsuarios() {
 
     let html = ""
 
-    // 🔥 BUSCA CADA DOCUMENTO REFERENCIADO
+  
     for (const ref of refs) {
       const produtoSnap = await getDoc(ref)
 
