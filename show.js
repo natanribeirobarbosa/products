@@ -8,25 +8,33 @@ import {
 function carregarUsuarios() {
   const lista = document.getElementById("products")
 
-  onSnapshot(collection(db, "roupas"), snapshot => {
-    var content = ``
+  const roupaRef = doc(db, "roupas", "lBi3lHOQHCQJvbtytYzx")
 
+  onSnapshot(roupaRef, (docSnap) => {
+    if (!docSnap.exists()) return
 
-    snapshot.forEach(doc => {
-     content +=`<div class="product">
-    <img src="${doc.data().linkF}" height="160px" alt="">
-    <div>
-    <span class="price"></span>
-    <span class="">${doc.data().nome}</span>
-    <button class="buy" onclick="window.location.href='${doc.data().link}'">Acessar link</button>
-    </div>
-</div>`;
+    const dados = docSnap.data()
+    const itens = dados.nomes // 👈 campo array do Firestore
 
+    let content = ""
 
+    itens.forEach(item => {
+      content += `
+        <div class="product">
+          <img src="${item.linkF}" height="160px" alt="">
+          <div>
+            <span class="">${item.nome}</span>
+            <button class="buy" onclick="window.location.href='${item.link}'">
+              Acessar link
+            </button>
+          </div>
+        </div>
+      `
     })
 
     lista.innerHTML = content
   })
 }
+
 
 carregarUsuarios()
