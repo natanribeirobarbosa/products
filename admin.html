@@ -29,10 +29,12 @@
          <input type="text" name="link" id="link">
         <label for="linkF">link da foto</label>
          <input type="text" name="linkF" id="linkF">
+          <label for="price">Preço (por completo)</label>
+         <input type="text" name="price" id="price">
     </form>
 
     <div id="lista"></div>
-        <button onclick='salvarProduto(document.getElementById("nome").value, document.getElementById("link").value, document.getElementById("linkF").value)'>Adicionar produto</button>
+        <button onclick='salvarProduto(document.getElementById("nome").value, document.getElementById("link").value, document.getElementById("linkF").value, document.getElementById("price").value)'>Adicionar produto</button>
 </body>
 
 <script>
