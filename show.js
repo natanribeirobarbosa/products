@@ -8,7 +8,7 @@ import {
 function carregarUsuarios() {
   const lista = document.getElementById("products")
 
-  onSnapshot(collection(db, "users"), snapshot => {
+  onSnapshot(collection(db, "roupas"), snapshot => {
     lista.innerHTML = ""
 
     snapshot.forEach(doc => {
