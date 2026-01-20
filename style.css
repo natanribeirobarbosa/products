@@ -72,6 +72,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  animation: sombraColorida 3s infinite linear;
  
 }
 
@@ -124,5 +125,23 @@ li{
   footer {
     margin-top: 50px;
     font-size: 12px;
+  }
+}
+
+@keyframes sombraColorida {
+  0% {
+    text-shadow: 1px 1px #c45050a3;
+  }
+  25% {
+    text-shadow: 1px 1px #50c4a3;
+  }
+  50% {
+    text-shadow: 1px 1px #5075c4;
+  }
+  75% {
+    text-shadow: 1px 1px #c450b8;
+  }
+  100% {
+    text-shadow: 1px 1px #c45050a3;
   }
 }
