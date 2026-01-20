@@ -130,18 +130,18 @@ li{
 
 @keyframes sombraColorida {
   0% {
-    text-shadow: 1px 1px #c45050a3;
+    text-shadow: 1px 1px 2px #c45050a3;
   }
   25% {
-    text-shadow: 1px 1px #50c4a3;
+    text-shadow: 1px 1px 2px #50c4a3;
   }
   50% {
-    text-shadow: 1px 1px #5075c4;
+    text-shadow: 1px 1px 2px #5075c4;
   }
   75% {
-    text-shadow: 1px 1px #c450b8;
+    text-shadow: 1px 1px 2px #c450b8;
   }
   100% {
-    text-shadow: 1px 1px #c45050a3;
+    text-shadow: 1px 1px 2px #c45050a3;
   }
 }
