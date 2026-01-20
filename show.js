@@ -33,9 +33,9 @@ function carregarProdutos() {
           <div class="product">
             <img src="${p.linkF}" height="160">
             <div>
-            <span>${p.store}</span>
+            <span class="store">${p.store}</span>
             <span>${p.nome}</span>
-            <span>${p.price}</span>
+            <span class="price">${p.price}</span>
             <button onclick="window.location.href='${p.link}'">
               Acessar link
             </button>
