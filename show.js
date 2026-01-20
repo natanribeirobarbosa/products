@@ -36,8 +36,8 @@ function carregarProdutos() {
             <span class="store">${p.store}</span>
             <span>${p.nome}</span>
             <span class="price">${p.price}</span>
-            <button onclick="window.location.href='${p.link}'">
-              Acessar link
+            <button onclick="window.open('${p.link}', '_blank')">
+              Acessar link🔗
             </button>
             </div>
           </div>
