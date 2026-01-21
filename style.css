@@ -47,6 +47,13 @@ button.checked{
   margin: 25px;
 }
 
+.image{
+  height: 220px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
 /* ===== PRODUTOS ===== */
 #products {
   display: flex;
@@ -138,9 +145,9 @@ li{
 
   }
 
-  .product img {
-    width: 100%;
-    max-width: 200px;
+  .image{
+    width: 140px;
+    height: 154px;
   }
   .store{
     text-align: center;

@@ -62,6 +62,7 @@ function carregarProdutos(colecao) {
         html += `
           <div class="product">
             <img src="${p.linkF}" height="160">
+            <div class="image" style="background-image: url('${p.linkF}')</div>
             <div>
             <span class="store">${p.store}</span>
             <span>${p.nome}</span>
