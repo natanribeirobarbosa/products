@@ -31,16 +31,17 @@
          <input type="text" name="linkF" id="linkF">
           <label for="price">Preço (por completo)</label>
          <input type="text" name="price" id="price">
-          <label for="price">loja</label>
+          <label for="store">loja</label>
          <input type="text" name="store" id="store">
+          <label for="cat">categoria</label>
+         <input type="text" name="cat" id="cat">
+         
          
     </form>
 
     <div id="lista"></div>
-        <button onclick='salvarProduto(document.getElementById("nome").value, document.getElementById("link").value, document.getElementById("linkF").value, document.getElementById("price").value, document.getElementById("price").value)'>Adicionar produto</button>
+        <button onclick='salvarProduto(document.getElementById("nome").value, document.getElementById("link").value, document.getElementById("linkF").value, document.getElementById("price").value, document.getElementById("store").value, document.getElementById("cat"))'>Adicionar produto</button>
 </body>
 
-<script>
-    carregarTodosProdutos();
-</script>
+
 </html>
