@@ -50,10 +50,10 @@ function carregarProdutos(documento) {
   })
 }
 
-function carregarTodosProdutos() {
+function carregarTodosProdutos(colecao) {
     const lista = document.getElementById("products")
 
-  onSnapshot(collection(db, "roupas"), snapshot => {
+  onSnapshot(collection(db, colecao), snapshot => {
     lista.innerHTML = ""
     let html = '';
 
@@ -77,7 +77,7 @@ function carregarTodosProdutos() {
     lista.innerHTML = html;
   })
 }
-carregarProdutos("vitrine")
+carregarTodosProdutos("vitrine")
 window.carregarProdutos = carregarProdutos
 window.carregarTodosProdutos = carregarTodosProdutos
 
