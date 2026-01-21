@@ -59,7 +59,7 @@ function carregarTodosProdutos() {
 
     snapshot.forEach(doc => {
       const p = doc.data(); // ✅ FALTAVA ISSO
-        lista += `
+        html += `
           <div class="product">
             <img src="${p.linkF}" height="160">
             <div>
@@ -74,6 +74,7 @@ function carregarTodosProdutos() {
         `
      
     })
+    lista.innerHTML = html;
   })
 }
 carregarProdutos("vitrine")
