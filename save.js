@@ -7,7 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
-async function salvarProduto(nome, link, linkF, price, store, cat) {
+async function salvarProduto(nome, link, linkF, price, store) {
 
   // cria um ID único manualmente
   const produtoRef = doc(collection(db, "roupas"));
@@ -18,8 +18,7 @@ async function salvarProduto(nome, link, linkF, price, store, cat) {
     link,
     linkF,
     price,
-    store,
-    cat
+    store
   };
 
   // salva na coleção principal
