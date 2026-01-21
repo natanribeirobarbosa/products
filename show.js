@@ -7,10 +7,9 @@ import {
 import { db } from "./firebase.js"
 
 
-function carregarProdutos(document) {
+function carregarProdutos(documento) {
   
-
-  const roupaRef = doc(db, "config", document)
+  const roupaRef = doc(db, "config", documento)
 
   onSnapshot(roupaRef, async (docSnap) => {
     const lista = document.getElementById("products")
