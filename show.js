@@ -59,7 +59,7 @@ function carregarTodosProdutos() {
 
     snapshot.forEach(doc => {
       const p = doc.data(); // ✅ FALTAVA ISSO
-        html += `
+        lista += `
           <div class="product">
             <img src="${p.linkF}" height="160">
             <div>
