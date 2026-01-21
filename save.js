@@ -1,6 +1,11 @@
-import { db } from "./firebase.js"
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
-import { doc, setDoc } from "firebase/firestore";
+import { db } from "./firebase.js";
+
+import {
+  collection,
+  doc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 
 async function salvarProduto(nome, link, linkF, price, store, cat) {
 
