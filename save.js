@@ -27,6 +27,8 @@ async function salvarProduto(nome, link, linkF, price, store) {
   // salva na coleção da categoria com o MESMO ID
   await setDoc(doc(db, cat, produtoId), dados);
 
+  await setDoc(doc(db, "vitrine", produtoId), dados);
+
   alert("Salvo com sucesso!");
 }
 
