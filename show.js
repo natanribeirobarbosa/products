@@ -7,7 +7,7 @@ import {
 
 import { db } from "./firebase.js"
 
-
+/* 
 function carregarProdutos(documento) {
   
   const roupaRef = doc(db, "config", documento)
@@ -48,9 +48,9 @@ function carregarProdutos(documento) {
 
     lista.innerHTML = html
   })
-}
+} */
 
-function carregarTodosProdutos(colecao) {
+function carregarProdutos(colecao) {
     const lista = document.getElementById("products")
 
   onSnapshot(collection(db, colecao), snapshot => {
@@ -77,7 +77,7 @@ function carregarTodosProdutos(colecao) {
     lista.innerHTML = html;
   })
 }
-carregarTodosProdutos("vitrine")
+carregarProdutos("vitrine")
 window.carregarProdutos = carregarProdutos
 window.carregarTodosProdutos = carregarTodosProdutos
 
