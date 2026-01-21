@@ -7,10 +7,10 @@ import {
 import { db } from "./firebase.js"
 
 
-function carregarProdutos() {
+function carregarProdutos(document) {
   const lista = document.getElementById("products")
 
-  const roupaRef = doc(db, "config", "vitrine")
+  const roupaRef = doc(db, "config", document)
 
   onSnapshot(roupaRef, async (docSnap) => {
     if (!docSnap.exists()) return
@@ -69,7 +69,7 @@ function carregarTodosProdutos() {
     })
   })
 }
-carregarProdutos()
+carregarProdutos("vitrine")
 window.carregarTodosProdutos = carregarTodosProdutos
 
 

@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DARKEST</title>
- <link rel="stylesheet" href="style.css">
-   <link rel="icon" href="favicon.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg">
 </head>
 <script src="show.js" type="module"></script>
+
+
 <body>
 
-    <div id="logo">
-<img src="logo21.jpeg" height="100px" alt="Perfil">
-<span>DARKEST</span>
-</div>
+  <div id="logo">
+    <img src="logo21.jpeg" height="100px" alt="Perfil">
+    <span>DARKEST</span>
+  </div>
 
 
 
 
+  <h1>Recomendações especializadas: 🔥</h1>
+    <div class="options">
+      <button>Todos</button>
+      <button class="checked">recomendação da semana</button>
+      <button onclick='carregarProdutos("shirts")'>Camisetas</button>
+      <button>Calça</button>
+      <button>Acessórios</button>
+    </div>
+  <div id="products">
 
-
-<h1>Recomendações especializadas: 🔥</h1>
-<div id="products">
-<p>Carregando...</p>
-<!-- <div class="product">
-  <button>dedede</button>
-</div> -->
-
-
-
-
-
-</div>
-<hr>
-
-<h1>Por que comprar usando nossos links?</h1>
-<ul>
-  <li>- Roupas da nossa loja com preço de fábrica;</li>
-  <li>- Parte do valor da comissão volta para o cliente</li>
-  <li>- Reviews detalhadas garantindo a qualidade;</li>
-  <li>- Seleções para você não perder tempo procurando;</li>
   
-</ul>
 
-<footer>
+
+     <p>Carregando...</p>
+
+
+    <div class="product">
+      <img
+        src="https://img.ltwebstatic.com/v4/j/spmp/2025/12/10/74/1765337359dbfac3b5a0bdbeb632107fc64bd0c8e8_thumbnail_900x.webp"
+        height="160">
+      <div>
+        <span class="store">${p.store}</span>
+        <span>${p.nome}</span>
+        <span class="price">${p.price}</span>
+        <button onclick="window.open('${p.link}', '_blank')">Acessar link🔗
+        </button>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <hr>
+
+  <h1>Por que comprar usando nossos links?</h1>
+  <ul>
+    <li>- Roupas da nossa loja com preço de fábrica;</li>
+    <li>- Parte do valor da comissão volta para o cliente</li>
+    <li>- Reviews detalhadas garantindo a qualidade;</li>
+    <li>- Seleções para você não perder tempo procurando;</li>
+
+  </ul>
+
+  <footer>
     <small>Alguns links nos geram comissão sem nenhum custo extra ao comprador.</small>
-</footer>
+  </footer>
 
 </body>
-
+<script src="index.js"></script>
 </html>
