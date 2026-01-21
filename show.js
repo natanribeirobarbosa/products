@@ -8,11 +8,12 @@ import { db } from "./firebase.js"
 
 
 function carregarProdutos(document) {
-  const lista = document.getElementById("products")
+  
 
   const roupaRef = doc(db, "config", document)
 
   onSnapshot(roupaRef, async (docSnap) => {
+    const lista = document.getElementById("products")
     if (!docSnap.exists()) return
 
     const dados = docSnap.data()
