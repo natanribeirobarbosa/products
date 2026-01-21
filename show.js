@@ -70,6 +70,7 @@ function carregarTodosProdutos() {
   })
 }
 carregarProdutos("vitrine")
+window.carregarProdutos = carregarProdutos
 window.carregarTodosProdutos = carregarTodosProdutos
 
 
