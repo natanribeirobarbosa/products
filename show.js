@@ -1,7 +1,8 @@
 import {
   doc,
   onSnapshot,
-  getDoc
+  getDoc,
+  collection,
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
 
 import { db } from "./firebase.js"
@@ -57,6 +58,7 @@ function carregarTodosProdutos() {
     let html = '';
 
     snapshot.forEach(doc => {
+      const p = doc.data(); // ✅ FALTAVA ISSO
         html += `
           <div class="product">
             <img src="${p.linkF}" height="160">
