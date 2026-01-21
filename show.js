@@ -50,7 +50,7 @@ function carregarProdutos(documento) {
 }
 
 function carregarTodosProdutos() {
-    const lista = document.getElementById("lista")
+    const lista = document.getElementById("products")
 
   onSnapshot(collection(db, "roupas"), snapshot => {
     lista.innerHTML = ""
@@ -59,10 +59,15 @@ function carregarTodosProdutos() {
     snapshot.forEach(doc => {
         html += `
           <div class="product">
-            <img src="${doc.data().linkF}" height="160">
-     
+            <img src="${p.linkF}" height="160">
+            <div>
+            <span class="store">${p.store}</span>
             <span>${p.nome}</span>
-          
+            <span class="price">${p.price}</span>
+            <button onclick="window.open('${p.link}', '_blank')">
+              Acessar link🔗
+            </button>
+            </div>
           </div>
         `
      

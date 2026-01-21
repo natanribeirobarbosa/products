@@ -23,11 +23,15 @@
 
   <h1>Recomendações especializadas: 🔥</h1>
   <div class="options">
-    <button>Todos</button>
+    <button onclick="carregarTodosProdutos()">Todos</button>
+
     <button class="checked" onclick='carregarProdutos("vitrine")'>recomendação da semana</button>
+
     <button onclick='carregarProdutos("shirts")'>Camisetas</button>
-    <button>Calça</button>
-    <button>Acessórios</button>
+
+    <button onclick='carregarProdutos("pants")'>Calça</button>
+
+    <button onclick='carregarProdutos("acessorios")'>Acessórios</button>
   </div>
   <div id="products">
 
