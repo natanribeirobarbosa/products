@@ -13,7 +13,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
+
+
 
 #logo {
   display: flex;
@@ -105,7 +108,7 @@ button.checked {
   align-items: center;
 }
 
-.product button {
+.product button:first-child{
 
   animation: sombraColorida 3s infinite linear;
 
@@ -174,21 +177,26 @@ li {
 @keyframes sombraColorida {
   0% {
     text-shadow: 1px 1px 2px #c45050a3;
+    box-shadow: 0px 0px 2px #c45050a3;
   }
 
   25% {
     text-shadow: 1px 1px 2px #50c4a3;
+    box-shadow: 0px 0px 2px #50c4a3;
   }
 
   50% {
     text-shadow: 1px 1px 2px #5075c4;
+    box-shadow: 0px 0px 2px #5075c4;
   }
 
   75% {
     text-shadow: 1px 1px 2px #c450b8;
+    box-shadow: 0px 0px 2px #c450b8;
   }
 
   100% {
     text-shadow: 1px 1px 2px #c45050a3;
+    box-shadow: 0px 0px 2px #c45050a3;
   }
 }

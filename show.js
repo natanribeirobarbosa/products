@@ -51,7 +51,7 @@ function carregarProdutos(documento) {
 } */
 
 function carregarProdutos(colecao) {
-    const lista = document.getElementById("products")
+  const lista = document.getElementById("products")
 
   onSnapshot(collection(db, colecao), snapshot => {
     lista.innerHTML = ""
@@ -59,21 +59,27 @@ function carregarProdutos(colecao) {
 
     snapshot.forEach(doc => {
       const p = doc.data(); // ✅ FALTAVA ISSO
-        html += `
-          <div class="product">
-            
-            <div class="image" style="background-image: url('${p.linkF}')"></div>
-            <div>
-            <span class="store">${p.store}</span>
-            <span>${p.nome}</span>
-            <span class="price">${p.price}</span>
-            <button onclick="window.open('${p.link}', '_blank')">
-              Acessar link🔗
-            </button>
-            </div>
-          </div>
+      html += `
+        <div class="product">
+
+      <div class="image" style="background-image: url('${p.linkF}')"></div>
+      <div>
+        <span class="store">${p.store}</span>
+        <span class="name">${p.nome}</span>
+        <span class="price">${p.price}</span>
+        <div>
+          <button onclick="window.open('${p.link}', '_blank')">
+            Acessar link🔗
+          </button>
+          <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
+            data-price="${p.price}">
+            ❤️
+          </button>
+        </div>
+      </div>
+    </div>
         `
-     
+
     })
     lista.innerHTML = html;
   })

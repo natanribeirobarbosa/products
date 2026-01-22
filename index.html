@@ -21,8 +21,11 @@
 
 
 
+
   <h1>Recomendações especializadas: 🔥</h1>
   <div class="options">
+    <button>Meus favoritos(0)</button>
+
     <button onclick='carregarProdutos("roupas")'>Todos</button>
 
     <button class="checked" onclick='carregarProdutos("vitrine")'>recomendação da semana</button>
@@ -40,18 +43,24 @@
 
     <p>Carregando...</p>
 
- <!--    <div class="product">
+    <div class="product">
 
       <div class="image" style="background-image: url('${p.linkF}')"></div>
       <div>
         <span class="store">${p.store}</span>
-        <span>${p.nome}</span>
+        <span class="name">${p.nome}</span>
         <span class="price">${p.price}</span>
-        <button onclick="window.open('${p.link}', '_blank')">
-          Acessar link🔗
-        </button>
+        <div>
+          <button onclick="window.open('${p.link}', '_blank')">
+            Acessar link🔗
+          </button>
+          <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
+            data-price="${p.price}">
+            ❤️
+          </button>
+        </div>
       </div>
-    </div> -->
+    </div>
 
 
 
