@@ -63,12 +63,13 @@ function renderFavoritos() {
         <span class="name">${p.name}</span>
         <span class="price">${p.price}</span>
         <div>
+            <button class="remove-fav" data-index="${index}">
+            ❌ Remover
+          </button>
           <button onclick="window.open('${p.link}', '_blank')">
             Acessar link🔗
           </button>
-          <button class="remove-fav" data-index="${index}">
-            ❌ Remover
-          </button>
+          
         </div>
       </div>
     `;
