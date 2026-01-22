@@ -70,7 +70,7 @@ function carregarProdutos(colecao) {
         <div>
           <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
             data-price="${p.price}">
-            Favoritar
+            🖤
           </button>
 
           <button onclick="window.open('${p.link}', '_blank')">

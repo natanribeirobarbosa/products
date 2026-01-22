@@ -43,16 +43,18 @@ hr {
   border-radius: 100%;
   border: 1px solid rgb(158, 158, 158);
 }
-.fav-btn:hover, .botao:active {
-  transform: scale(120%);
-  transition: 200ms ease-in-out;
-
-}
-@media (hover: none) {
+@media (hover: hover) {
   .botao:hover {
-    background: #333;
+    transform: scale(120%);
   }
 }
+
+@media (hover: none) {
+  .botao:active {
+    transform: scale(120%);
+  }
+}
+
 
 button {
   padding: 5px;
