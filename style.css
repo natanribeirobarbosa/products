@@ -33,6 +33,27 @@ hr {
   margin: 50px;
 }
 
+.fav-btn{
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 100%;
+  border: 1px solid rgb(158, 158, 158);
+}
+.fav-btn:hover, .botao:active {
+  transform: scale(120%);
+  transition: 200ms ease-in-out;
+
+}
+@media (hover: none) {
+  .botao:hover {
+    background: #333;
+  }
+}
+
 button {
   padding: 5px;
   border-radius: 5px;
@@ -80,6 +101,7 @@ button.checked {
   border-radius: 8px;
   transition: box-shadow 0.2s;
   flex-direction: column;
+  position: relative;
 
 
 }
@@ -120,10 +142,7 @@ button.checked {
   animation: sombraColorida 3s linear infinite;
 }
 
-/* ===== HOVER ===== */
-.product:hover {
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.4);
-}
+
 
 .store {
   font-size: 12px;
