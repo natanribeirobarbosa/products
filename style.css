@@ -45,16 +45,11 @@ hr {
   transition: 100ms ease-in-out;
 
 }
-@media (hover: hover) {
-  .fav-btn:hover {
-    transform: scale(105%);
-    transition: 100ms ease-in-out;
-  }
-}
+
 
 @media (hover: none) {
   .fav-btn:active {
-    transform: scale(105%);
+    transform: scale(110%);
     transition: 100ms ease-in-out;
 
   }
@@ -137,6 +132,7 @@ button.checked {
   left: 0;
   margin: 30px;
   background-color: #1c1c1cba;
+  z-index: 1;
 }
 
 .product>div {
