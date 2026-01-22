@@ -34,7 +34,7 @@ document.addEventListener("click", function (e) {
 
   favoritos.push(produto);
   localStorage.setItem("favoritos", JSON.stringify(favoritos));
-    document.getElementById("message").innerText= "Favorito salvo com sucesso!"
+    document.getElementById("message").innerText= "Produto salvo com sucesso!"
   atualizarContador()
 });
 
