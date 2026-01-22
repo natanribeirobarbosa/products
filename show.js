@@ -68,13 +68,15 @@ function carregarProdutos(colecao) {
         <span class="name">${p.nome}</span>
         <span class="price">${p.price}</span>
         <div>
-          <button onclick="window.open('${p.link}', '_blank')">
-            Acessar link🔗
-          </button>
           <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
             data-price="${p.price}">
             Favoritar
           </button>
+
+          <button onclick="window.open('${p.link}', '_blank')">
+            Acessar link🔗
+          </button>
+          
         </div>
       </div>
     </div>
