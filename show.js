@@ -60,7 +60,7 @@ function carregarProdutos(colecao) {
     snapshot.forEach(doc => {
       const p = doc.data(); // ✅ FALTAVA ISSO
       html += `
-        <div class="product">
+       <div class="product">
 
       <div class="image" style="background-image: url('${p.linkF}')"></div>
       <div>
@@ -73,7 +73,7 @@ function carregarProdutos(colecao) {
           </button>
           <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
             data-price="${p.price}">
-            ❤️
+            Favoritar
           </button>
         </div>
       </div>

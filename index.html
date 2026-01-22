@@ -10,8 +10,8 @@
 </head>
 <script src="show.js" type="module"></script>
 
-
 <body>
+  <span id="message"></span>
 
   <div id="logo">
     <img src="logo21.jpeg" height="100px" alt="Perfil">
@@ -24,7 +24,9 @@
 
   <h1>Recomendações especializadas: 🔥</h1>
   <div class="options">
-    <button>Meus favoritos(0)</button>
+    <button id="btnFav">
+  Meus favoritos <span id="favNumber">(0)</span>
+</button>
 
     <button onclick='carregarProdutos("roupas")'>Todos</button>
 
@@ -43,7 +45,7 @@
 
     <p>Carregando...</p>
 
-    <div class="product">
+    <!-- <div class="product">
 
       <div class="image" style="background-image: url('${p.linkF}')"></div>
       <div>
@@ -56,11 +58,11 @@
           </button>
           <button class="fav-btn" data-name="${p.nome}" data-image="${p.linkF}" data-link="${p.link}"
             data-price="${p.price}">
-            ❤️
+            Favoritar
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
