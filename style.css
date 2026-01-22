@@ -47,14 +47,14 @@ hr {
 }
 @media (hover: hover) {
   .fav-btn:hover {
-    transform: scale(110%);
+    transform: scale(105%);
     transition: 100ms ease-in-out;
   }
 }
 
 @media (hover: none) {
   .fav-btn:active {
-    transform: scale(110%);
+    transform: scale(105%);
     transition: 100ms ease-in-out;
 
   }
