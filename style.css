@@ -42,16 +42,21 @@ hr {
   background-color: rgba(255, 255, 255, 0.404);
   border-radius: 100%;
   border: 1px solid rgb(158, 158, 158);
+  transition: 100ms ease-in-out;
+
 }
 @media (hover: hover) {
-  .botao:hover {
-    transform: scale(120%);
+  .fav-btn:hover {
+    transform: scale(110%);
+    transition: 100ms ease-in-out;
   }
 }
 
 @media (hover: none) {
-  .botao:active {
-    transform: scale(120%);
+  .fav-btn:active {
+    transform: scale(110%);
+    transition: 100ms ease-in-out;
+
   }
 }
 
@@ -107,6 +112,8 @@ button.checked {
 
 
 }
+
+
 
 .price {
   font-size: 20px;
