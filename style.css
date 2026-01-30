@@ -1,11 +1,12 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
-  font-family: math;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: #000000;
   color: #fff;
   text-align: center;
@@ -13,7 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 
@@ -81,7 +83,7 @@ button.checked {
 }
 
 /* ===== PRODUTOS ===== */
-#products {
+.products {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
