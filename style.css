@@ -90,7 +90,7 @@ button.checked {
   gap: 15px;
   max-width: 1000px;
   width: 100%;
-  min-height: 335px;
+  min-height: 232px;
   justify-content: center;
 }
 
@@ -107,7 +107,8 @@ button.checked {
   transition: box-shadow 0.2s;
   flex-direction: column;
   position: relative;
-  animation: sombraColorida 7s linear infinite;
+  animation: sombraColorida 4s linear infinite;
+  height: min-content;
 
 
 }
@@ -148,7 +149,7 @@ button.checked {
 }
 
 .product button:nth-of-type(2) {
-  animation: sombraColorida 7s linear infinite;
+  animation: sombraColorida 4s linear infinite;
 }
 
 
@@ -207,7 +208,7 @@ li {
     text-align: center;
     max-width: 140px;
   
-    height: min-content;
+   
 
   }
 
