@@ -62,6 +62,7 @@ button {
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  color: black;
 }
 
 button.checked {
@@ -154,11 +155,20 @@ button.checked {
 .store {
   font-size: 12px;
   width: 100%;
+  font-style: italic;
   
+}
+
+.name{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .price {
   color: green;
+  white-space: nowrap;
 }
 
 footer {
@@ -214,26 +224,26 @@ li {
 @keyframes sombraColorida {
   0% {
     text-shadow: 1px 1px 2px #c45050a3;
-    box-shadow: 0px 0px 2px #c45050a3;
+    box-shadow: 0px 0px 5px #c45050a3;
   }
 
   25% {
     text-shadow: 1px 1px 2px #50c4a3;
-    box-shadow: 0px 0px 2px #50c4a3;
+    box-shadow: 0px 0px 5px #50c4a3;
   }
 
   50% {
     text-shadow: 1px 1px 2px #5075c4;
-    box-shadow: 0px 0px 2px #5075c4;
+    box-shadow: 0px 0px 5px #5075c4;
   }
 
   75% {
     text-shadow: 1px 1px 2px #c450b8;
-    box-shadow: 0px 0px 2px #c450b8;
+    box-shadow: 0px 0px 5px #c450b8;
   }
 
   100% {
     text-shadow: 1px 1px 2px #c45050a3;
-    box-shadow: 0px 0px 2px #c45050a3;
+    box-shadow: 0px 0px 5px #c45050a3;
   }
 }

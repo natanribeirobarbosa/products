@@ -85,6 +85,8 @@ function carregarProdutos(colecao) {
     })
     lista.innerHTML = html;
   })
+
+  carregarSorteios()
 }
 
 
@@ -140,7 +142,6 @@ function carregarSorteios() {
 
 
 carregarProdutos("vitrine")
-carregarSorteios()
 window.carregarSorteios = carregarSorteios
 window.carregarProdutos = carregarProdutos
 window.carregarTodosProdutos = carregarTodosProdutos
