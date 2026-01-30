@@ -205,6 +205,8 @@ li {
     align-items: center;
     text-align: center;
     max-width: 140px;
+    animation: sombraColorida 7s linear infinite;
+    height: min-content;
 
   }
 

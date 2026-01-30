@@ -125,9 +125,6 @@ function carregarSorteios() {
                   🖤
                 </button>
 
-                <button onclick="window.open('${p.link}', '_blank')">
-                  Acessar link 🔗
-                </button>
               </div>
             </div>
           </div>
