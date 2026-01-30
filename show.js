@@ -87,7 +87,7 @@ function carregarProdutos(colecao) {
   })
 }
 
-import { getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 
 function carregarSorteios() {
   const lista = document.getElementById("sort");
