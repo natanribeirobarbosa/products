@@ -148,7 +148,7 @@ button.checked {
 }
 
 .product button:nth-of-type(2) {
-  animation: sombraColorida 3s linear infinite;
+  animation: sombraColorida 7s linear infinite;
 }
 
 
