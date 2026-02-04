@@ -128,10 +128,7 @@ button.checked {
 
 
 }
-.sortProduct{
-  box-shadow: 0px 0px 10px #a8a8a88f;
-  border-radius: 10px;
-}
+
 
 
 .price {
@@ -184,11 +181,13 @@ button.checked {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  margin: 0px 10px;
   overflow: hidden;
 }
 
 .price {
-  color: green;
+  color: rgb(0, 108, 0);
+  margin: 0px 10px;
   white-space: nowrap;
 }
 
