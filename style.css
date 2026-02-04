@@ -177,10 +177,20 @@ button.checked {
   
 }
 
+
 .name{
-  min-height: 72px;
+ 
+
+  
+   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  overflow: hidden;
+  padding: 8px;
+  min-width: 0;      /* ⭐ ESSENCIAL */
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
 }
 
 .price {
