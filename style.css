@@ -123,15 +123,7 @@ button.checked {
 
 
 
-.price {
-  font-size: 20px;
-  text-shadow: 0 0 4px #000000de;
-}
 
-.buy {
-  padding: 2px;
-  font-size: 17px;
-}
 
 .product img {
   width: 120px;
@@ -186,10 +178,19 @@ button.checked {
 }
 
 .price {
-  color: rgb(0, 108, 0);
+  color: #009c00;
   white-space: nowrap;
   font-size: 19px;
   padding: 0px 3px;
+  font-size: 20px;
+  text-shadow: 0 0 4px #000000de;
+}
+
+
+
+.buy {
+  padding: 2px;
+  font-size: 17px;
 }
 
 footer {
