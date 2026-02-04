@@ -178,7 +178,7 @@ button.checked {
 }
 
 .price {
-  color: #009c00;
+  color: green;
   white-space: nowrap;
   font-size: 19px;
   padding: 0px 3px;
