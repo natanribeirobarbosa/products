@@ -116,16 +116,7 @@ function carregarSorteios() {
               <span class="name">${p.nome}</span>
               
 
-              <div>
-                <button class="fav-btn"
-                  data-name="${p.nome}"
-                  data-image="${p.linkF}"
-                  data-link="${p.link}"
-                  data-price="${p.price}">
-                  🖤
-                </button>
-
-              </div>
+           
             </div>
           </div>
         `;

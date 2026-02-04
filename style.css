@@ -7,7 +7,8 @@
 body {
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background: #000000;
+
+  background: black;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -18,16 +19,21 @@ body {
   line-height: 1.5;
 }
 
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 #logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 h1 {
   font-size: 1.7em;
+ 
 }
 
 hr {
@@ -36,14 +42,16 @@ hr {
 }
 
 .fav-btn{
-  font-size: 16px;
+  font-size: 15px;
   position: absolute;
   top: 0;
   right: 0;
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.404);
+  margin: 15px;
+  padding: 0px;
   border-radius: 100%;
-  border: 1px solid rgb(158, 158, 158);
+  color: black;
+  border: 0.5px solid rgb(40, 40, 40);
+  
   transition: 100ms ease-in-out;
 
 }
@@ -73,7 +81,11 @@ button.checked {
 }
 
 .options {
-  margin: 25px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 25px 0px;
+  justify-content: center;
 }
 
 .image {
@@ -93,9 +105,13 @@ button.checked {
   min-height: 232px;
   justify-content: center;
 }
+.sortProducts{
+  margin: 15px 0px;
+}
 
 .product {
-  background: #2f2f2f;
+  background: #141414;
+  box-shadow: 0px 0px 1px 1px #2f2f2f;
   box-sizing: content-box;
   width: 200px;
   display: flex;
@@ -103,16 +119,19 @@ button.checked {
   padding: 10px;
   gap: 5px;
   max-width: 400px;
-  border-radius: 8px;
+ 
   transition: box-shadow 0.2s;
   flex-direction: column;
   position: relative;
-  animation: sombraColorida 4s linear infinite;
+  
   height: min-content;
 
 
 }
-
+.sortProduct{
+  box-shadow: 0px 0px 10px #a8a8a88f;
+  border-radius: 10px;
+}
 
 
 .price {
@@ -185,20 +204,22 @@ ul {
   padding: 0;
 }
 
-li {
+li{
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   margin: 10px 0px;
   display: flex;
   align-items: center;
-  
 }
+
+
 
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
 
   #logo {
     flex-direction: column;
+   
     gap: 5px;
   }
 
@@ -249,5 +270,34 @@ li {
   100% {
     text-shadow: 1px 1px 2px #c45050a3;
     box-shadow: 0px 0px 5px #c45050a3;
+  }
+}
+
+
+
+@keyframes caixaColorida {
+  0% {
+    text-shadow: 1px 1px 2px #c45050a3;
+    box-shadow: 0px 0px 30px #c45050a3;
+  }
+
+  25% {
+    text-shadow: 1px 1px 2px #50c4a3;
+    box-shadow: 0px 0px 30px #50c4a3;
+  }
+
+  50% {
+    text-shadow: 1px 1px 2px #5075c4;
+    box-shadow: 0px 0px 30px #5075c4;
+  }
+
+  75% {
+    text-shadow: 1px 1px 2px #c450b8;
+    box-shadow: 0px 0px 30px #c450b8;
+  }
+
+  100% {
+    text-shadow: 1px 1px 2px #c45050a3;
+    box-shadow: 0px 0px 30px #c45050a3;
   }
 }
