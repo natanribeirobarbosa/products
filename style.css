@@ -178,15 +178,15 @@ button.checked {
 }
 
 .name{
- 
-  padding: 0px 10px;
+  min-height: 72px;
+  overflow: hidden;
   overflow: hidden;
 }
 
 .price {
   color: rgb(0, 108, 0);
-  padding: 0px 10px;
   white-space: nowrap;
+  font-size: 19px;
 }
 
 footer {
