@@ -21,7 +21,7 @@ function carregarProdutos(colecao) {
        <div class="product">
 
       <div class="image-slider" data-images='${JSON.stringify(p.linkF)}'>
-  <img src="${p.linkF[0]}" class="slide-img"></div>
+      <img src="${p.linkF[0]}" class="slide-img"></div>
       <div>
         <span class="store">${p.store}</span>
         <span class="name">${p.nome}</span>
