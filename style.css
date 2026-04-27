@@ -126,9 +126,10 @@ button.checked {
 
 
 .product img {
-  width: 120px;
-  height: auto;
+  width: 200px;
+  height: 200px;
   border-radius: 6px;
+  object-fit: cover;
 }
 
 .image-slider {
