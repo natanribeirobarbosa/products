@@ -131,7 +131,7 @@ button.checked {
   border-radius: 6px;
   object-fit: cover;
 }
-
+/* 
 .image-slider {
   overflow: hidden;
 }
@@ -144,7 +144,7 @@ button.checked {
 
 .slide-img {
   transition: opacity 0.5s ease;
-}
+} */
 
 #message{
   position: fixed;

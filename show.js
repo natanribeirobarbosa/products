@@ -20,9 +20,7 @@ function carregarProdutos(colecao) {
       html += `
        <div class="product">
 
-      <div class="image-slider" data-images='${JSON.stringify(p.linkF)}'>
-      <img src="${p.linkF[0]}" class="slide-img"></div>
-      <div>
+      <div class="image" style="background-image: url('${p.linkF}')"></div>
         <span class="store">${p.store}</span>
         <span class="name">${p.nome}</span>
         <span class="price">${p.price}</span>
@@ -43,17 +41,7 @@ function carregarProdutos(colecao) {
 
     })
     lista.innerHTML = html;
-      document.querySelectorAll(".image-slider").forEach(slider => {
-      const images = JSON.parse(slider.dataset.images);
-      const imgElement = slider.querySelector(".slide-img");
-
-      let index = 0;
-
-      setInterval(() => {
-      index = (index + 1) % images.length;
-      imgElement.src = images[index];
-      }, 2000); // troca a cada 2 segundos
-      });
+    
   })
 
   carregarSorteios()
