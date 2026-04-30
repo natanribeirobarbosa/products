@@ -1,4 +1,5 @@
 carregarProdutos("vitrine")
+carregarSorteios()
 
 const botoes = document.querySelectorAll(".options>button.b");
 

@@ -44,7 +44,7 @@ function carregarProdutos(colecao) {
     
   })
 
-  carregarSorteios()
+  return
 }
 
 
@@ -83,6 +83,7 @@ function carregarSorteios() {
 
     lista.innerHTML = html;
   });
+  return
 }
 
 
