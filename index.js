@@ -1,3 +1,5 @@
+carregarProdutos("vitrine")
+
 const botoes = document.querySelectorAll(".options>button.b");
 
 botoes.forEach(botao => {
