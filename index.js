@@ -26,6 +26,7 @@ function showLooks(){
     document.querySelector('.looks').style.display="unset"
     document.querySelector('.show').classList.add("checked")
     document.querySelector('.jesse').classList.add("checked")
+    carregarProdutos("jessePinkman")
 }
 }
 

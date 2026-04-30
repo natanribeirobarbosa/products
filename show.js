@@ -90,7 +90,7 @@ function carregarSorteios() {
 carregarProdutos("vitrine")
 window.carregarSorteios = carregarSorteios
 window.carregarProdutos = carregarProdutos
-window.carregarTodosProdutos = carregarTodosProdutos
+
 
 
 
