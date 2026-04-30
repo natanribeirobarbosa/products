@@ -1,16 +1,33 @@
-const botoes = document.querySelectorAll(".options button");
+const botoes = document.querySelectorAll(".options>button.b");
 
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         document.getElementById("products").innerHTML= `<p>Carregando...</p>`
         botoes.forEach(b => b.classList.remove("checked"));
         botao.classList.add("checked");
-
-
-
     });
 });
 
+
+function showLooks(){
+   
+
+  if(document.querySelector('.looks').style.display=="unset"){
+    document.querySelector('.looks').style.display="none"
+    document.querySelector('.show').classList.remove("checked")
+
+  }else{
+    
+        
+        botoes.forEach(b => b.classList.remove("checked"));
+      
+     
+    
+    document.querySelector('.looks').style.display="unset"
+    document.querySelector('.show').classList.add("checked")
+    document.querySelector('.jesse').classList.add("checked")
+}
+}
 
 document.addEventListener("click", function (e) {
   if (!e.target.classList.contains("fav-btn")) return;
