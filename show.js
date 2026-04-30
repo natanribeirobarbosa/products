@@ -44,10 +44,10 @@ function carregarProdutos(colecao) {
     
   })
 
-  return
+  carregarSorteios()
 }
 
-
+carregarProdutos("vitrine")
 
 function carregarSorteios() {
   const lista = document.getElementById("sort");
